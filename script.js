@@ -18,13 +18,6 @@ const LOCAL_STORAGE_SELECTED_LIST_ID_KEY = 'task.selectedId'
 let lists= JSON.parse(localStorage.getItem(LOCAL_STORAGE_LIST_KEY)) || []
 let selectedId = localStorage.getItem(LOCAL_STORAGE_SELECTED_LIST_ID_KEY)
 
-// ---- on load  ----
-// window.addEventListener('load' , e =>{
-//     if(selectedId == null){
-//         dataListDisplayContainer.style.display = 'none'
-//     }
-// })
-
 // ------  eventListeners  --------
 newListForm.addEventListener('submit',e=>{
     e.preventDefault()
